@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna AI EduNews Creator</title>
+    <style>
+        body {
+            font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+            margin: 0;
+        }
+
+        /* 상단 프로필 섹션 */
+        .profile-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #ddd; /* 사진 없을 때 기본색 */
+            object-fit: cover;
+            border: 3px solid #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .profile-title {
+            margin-top: 15px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .profile-title a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s;
+        }
+        .profile-title a:hover {
+            color: #007bff;
+        }
+
+        /* 링크 카드 섹션 */
+        .link-container {
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .link-card {
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #333;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .link-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .link-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            margin-right: 15px;
+            object-fit: cover;
+        }
+        .link-text {
+            display: flex;
+            flex-direction: column;
+        }
+        .link-name {
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .link-url {
+            font-size: 12px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-section">
+        <img src="https://via.placeholder.com/100" alt="Anna Profile" class="profile-img">
+        <div class="profile-title">
+            <a href="https://your-intro-site.com">Anna AI EduNews Creator</a>
+        </div>
+    </div>
+
+    <div class="link-container">
+        <a href="https://blog.naver.com" class="link-card" target="_blank">
+            <img src="https://via.placeholder.com/40" alt="Blog" class="link-icon">
+            <div class="link-text">
+                <span class="link-name">Anna AI융합사고력 교육 블로그</span>
+                <span class="link-url">blog.naver.com</span>
+            </div>
+        </a>
+
+        <a href="https://youtube.com" class="link-card" target="_blank">
+            <img src="https://via.placeholder.com/40" alt="YouTube" class="link-icon">
+            <div class="link-text">
+                <span class="link-name">Anna AI융합사고력 교육 유튜브</span>
+                <span class="link-url">youtube.com</span>
+            </div>
+        </a>
+
+        <a href="https://contents.premium.naver.com" class="link-card" target="_blank">
+            <img src="https://via.placeholder.com/40" alt="Naver" class="link-icon">
+            <div class="link-text">
+                <span class="link-name">Anna AI융합사고력 교육 네이버</span>
+                <span class="link-url">contents.premium.naver.com</span>
+            </div>
+        </a>
+
+        <a href="https://class101.net" class="link-card" target="_blank">
+            <img src="https://via.placeholder.com/40" alt="Class101" class="link-icon">
+            <div class="link-text">
+                <span class="link-name">Anna AI융합사고력 클래스101</span>
+                <span class="link-url">class101.net</span>
+            </div>
+        </a>
+
+        <a href="https://abr.ge" class="link-card" target="_blank">
+            <img src="https://via.placeholder.com/40" alt="Coupon" class="link-icon">
+            <div class="link-text">
+                <span class="link-name">Anna AI융합사고력 101할인권</span>
+                <span class="link-url">abr.ge</span>
+            </div>
+        </a>
+    </div>
+
+</body>
+</html>
