@@ -15,42 +15,38 @@
             margin: 0;
         }
 
-        /* 상단 프로필 섹션 */
         .profile-section {
             text-align: center;
             margin-bottom: 25px;
         }
         .profile-img {
-            width: 100px;
-            height: 100px;
+            width: 90px;
+            height: 90px;
             border-radius: 50%;
-            background-color: #ddd;
             object-fit: cover;
             border: 3px solid #fff;
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
         .profile-title {
             margin-top: 15px;
-            font-size: 26px;
+            font-size: 24px;
             font-weight: 800;
             color: #333;
         }
 
-        /* 링크 컨테이너 */
         .link-container {
             width: 100%;
             max-width: 400px;
             display: flex;
             flex-direction: column;
-            gap: 15px;
+            gap: 12px;
         }
 
-        /* 공통 카드 스타일 */
         .link-card {
             display: flex;
             align-items: center;
             background-color: #fff;
-            padding: 18px;
+            padding: 15px;
             border-radius: 16px;
             text-decoration: none;
             color: #333;
@@ -59,22 +55,25 @@
         }
 
         .link-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-            background-color: #fafafa;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
         }
 
-        /* Anna AI 소개란 특별 스타일 (가장 상단 배치) */
+        /* [수정] 소개란 카드 디자인 - 사진 크기 고정 */
         .intro-card {
-            border: 2px solid #007bff; /* 포스트잉글리쉬 블루 포인트 */
+            border: 1.5px solid #007bff;
             background-color: #f8fbff;
         }
-        .intro-card:hover {
-            background-color: #007bff;
-        }
-        .intro-card:hover .link-name, 
-        .intro-card:hover .link-url {
-            color: #fff;
+        
+        /* 원장님 사진 크기를 아이콘처럼 작게 설정 */
+        .intro-photo {
+            width: 50px; /* 크기를 50px로 고정 */
+            height: 50px;
+            border-radius: 50%; 
+            margin-right: 15px;
+            object-fit: cover; /* 사진이 일그러지지 않게 채움 */
+            border: 2px solid #007bff;
+            flex-shrink: 0; /* 사진이 찌그러지지 않도록 방지 */
         }
 
         .link-icon {
@@ -83,10 +82,7 @@
             border-radius: 10px;
             margin-right: 15px;
             object-fit: cover;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
+            flex-shrink: 0;
         }
 
         .link-text {
@@ -95,19 +91,18 @@
         }
         .link-name {
             font-weight: bold;
-            font-size: 17px;
+            font-size: 16px;
         }
         .link-url {
-            font-size: 13px;
+            font-size: 12px;
             color: #888;
-            margin-top: 2px;
         }
     </style>
 </head>
 <body>
 
     <div class="profile-section">
-        <img src="원장.png" class="profile-img">
+        <img src="https://via.placeholder.com/90" alt="Anna Profile" class="profile-img">
         <div class="profile-title">Anna AI Creator Hub</div>
     </div>
 
