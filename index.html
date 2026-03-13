@@ -36,13 +36,18 @@
             margin-bottom: 5px;
         }
 
-        /* [신규] 특허 출원 문구 스타일 */
+        /* [수정] 특허 출원 문구 스타일 */
         .patent-text {
             font-size: 15px;
             color: #007bff; /* 포스트잉글리쉬 브랜드 블루 */
-            font-weight: 600;
+            font-weight: 400; /* 기본 굵기는 보통으로 */
             margin-bottom: 20px;
             letter-spacing: -0.5px;
+        }
+
+        /* "Anna AI" 강조를 위한 별도 스타일 */
+        .patent-text strong {
+            font-weight: 800; /* Anna AI만 두껍게 */
         }
 
         .link-container {
