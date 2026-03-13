@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anna AI EduNews Creator Hub</title>
+    <title>Anna AI Creator Hub</title>
     <style>
         body {
             font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
@@ -18,7 +18,7 @@
         /* 상단 프로필 섹션 */
         .profile-section {
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
         .profile-img {
             width: 100px;
@@ -29,40 +29,14 @@
             border: 3px solid #fff;
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
-        
         .profile-title {
-            margin-top: 20px;
-        }
-
-        /* 강조된 Anna AI Creator Hub 링크 디자인 */
-        .profile-title a {
-            text-decoration: none;
-            color: #333;
+            margin-top: 15px;
             font-size: 26px;
             font-weight: 800;
-            padding: 10px 20px;
-            border-radius: 30px;
-            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            display: inline-block;
-            background-color: transparent;
+            color: #333;
         }
 
-        /* 마우스를 올렸을 때의 시각적 피드백 */
-        .profile-title a:hover {
-            background-color: #007bff; /* 신뢰의 블루 */
-            color: #ffffff;
-            transform: scale(1.08); /* 기분 좋게 커지는 느낌 */
-            box-shadow: 0 5px 15px rgba(0,123,255,0.3);
-        }
-
-        /* 클릭 유도를 위한 링크 아이콘 추가 */
-        .profile-title a::after {
-            content: ' 🔗';
-            font-size: 18px;
-            vertical-align: middle;
-        }
-
-        /* 링크 카드 섹션 */
+        /* 링크 컨테이너 */
         .link-container {
             width: 100%;
             max-width: 400px;
@@ -70,6 +44,8 @@
             flex-direction: column;
             gap: 15px;
         }
+
+        /* 공통 카드 스타일 */
         .link-card {
             display: flex;
             align-items: center;
@@ -79,19 +55,40 @@
             text-decoration: none;
             color: #333;
             box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-            transition: transform 0.2s, box-shadow 0.2s;
+            transition: all 0.2s ease-in-out;
         }
+
         .link-card:hover {
             transform: translateY(-4px);
             box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            background-color: #fafafa;
         }
+
+        /* Anna AI 소개란 특별 스타일 (가장 상단 배치) */
+        .intro-card {
+            border: 2px solid #007bff; /* 포스트잉글리쉬 블루 포인트 */
+            background-color: #f8fbff;
+        }
+        .intro-card:hover {
+            background-color: #007bff;
+        }
+        .intro-card:hover .link-name, 
+        .intro-card:hover .link-url {
+            color: #fff;
+        }
+
         .link-icon {
             width: 45px;
             height: 45px;
             border-radius: 10px;
             margin-right: 15px;
             object-fit: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
         }
+
         .link-text {
             display: flex;
             flex-direction: column;
@@ -110,15 +107,18 @@
 <body>
 
     <div class="profile-section">
-        <img src="원장.png" alt="Anna Profile" class="profile-img">
-        <div class="profile-title">
-            <a href="https://fostenglish.github.io/resume/" title="Anna의 세계로 초대합니다">
-                Anna AI Creator Hub
-            </a>
-        </div>
+        <img src="원장.png="Anna Profile" class="profile-img">
+        <div class="profile-title">Anna AI Creator Hub</div>
     </div>
 
     <div class="link-container">
+        
+        <a href="https://fostenglish.github.io/resume/" class="link-card intro-card">
+            <div class="link-icon">✨</div>
+            <div class="link-text">
+                <span class="link-name">Anna AI 소개 (Introduce)</span>
+            </div>
+        </a>
         <a href="https://contents.premium.naver.com/annasjy/newstalk" class="link-card" target="_blank">
             <img src="프리미엄.png" alt="Blog" class="link-icon">
             <div class="link-text">
