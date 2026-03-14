@@ -15,7 +15,7 @@
             margin: 0;
         }
 
-        /* 상단 프로필 섹션 */
+        /* 상단 프로필 */
         .profile-section {
             text-align: center;
             margin-bottom: 25px;
@@ -36,13 +36,12 @@
             margin-bottom: 5px;
         }
 
-        /* 특허 출원 문구 스타일 */
+        /* 특허 문구 - Anna AI만 볼드 */
         .patent-text {
             font-size: 15px;
             color: #007bff; 
             font-weight: 400;
             margin-bottom: 25px;
-            letter-spacing: -0.5px;
         }
         .patent-text strong {
             font-weight: 800;
@@ -57,7 +56,7 @@
             gap: 12px;
         }
 
-        /* 공통 카드 스타일 (테두리 없음) */
+        /* 모든 카드 공통 스타일 (테두리 없음) */
         .link-card {
             display: flex;
             align-items: center;
@@ -68,39 +67,34 @@
             color: #333;
             box-shadow: 0 2px 8px rgba(0,0,0,0.05);
             transition: all 0.2s ease-in-out;
-            border: none;
+            height: 50px; /* 모든 칸 높이 통일 */
         }
 
         .link-card:hover {
             transform: translateY(-3px);
             box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-            background-color: #fafafa;
         }
         
-        /* [수정] 사진 및 아이콘 크기 최적화 */
-        .card-thumb {
-            width: 48px; /* 사진 크기를 아이콘 급으로 작게 조절 */
-            height: 48px;
-            border-radius: 50%; /* 소개 사진은 원형 유지 */
+        /* [핵심] 원장님 사진 크기 강제 고정 */
+        .intro-photo {
+            width: 48px !important;  /* !important를 붙여서 강제로 크기 고정 */
+            height: 48px !important;
+            border-radius: 50%;
             margin-right: 15px;
             object-fit: cover;
             flex-shrink: 0;
-            border: 1px solid #eee; /* 사진 경계선 살짝 추가 */
         }
         
+        /* 일반 서비스 아이콘 크기 */
         .link-icon {
             width: 45px;
             height: 45px;
-            border-radius: 10px; /* 서비스 아이콘은 사각형 유지 */
+            border-radius: 10px;
             margin-right: 15px;
             object-fit: cover;
             flex-shrink: 0;
         }
 
-        .link-text {
-            display: flex;
-            flex-direction: column;
-        }
         .link-name {
             font-weight: bold;
             font-size: 17px;
